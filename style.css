@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("images/series-e-filmes.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#fields {
+    background-color: rgba(0, 0, 0, 0.719);
+    max-width: 30%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+#loginLabel{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+#emailInput{
+    margin-bottom: 10px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 1em;
+}
+#passwordInput{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.button {
+    width: 30%;
+    display: block;
+    margin: 20px auto 40px auto;
+    background-color: #df1515;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+.button:hover {
+    background-color: #b11111;
+    cursor: pointer;
+}
+.button:active{
+    background-image: radial-gradient( #df1515, #b11111);
+    transition: 1s;
+}
+
+#checkboxLogin {
+    color: #fff;
+}
+#labelCheckBox {
+    display: inline-block;
+}
+#accButtons {
+    display: flex;
+}
+.accButtons {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+}
+#assRedirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#assRedirect > a, #assRedirect > p {
+    color: #fff;
+}
+#assRedirect > p {
+    margin-right: 5px;
+}
+
+footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+footer > img {
+    width: 250px;
+    display: block;
+    margin: 30px auto;
+}
+
+@media (max-width: 870px) {
+    #fields {
+        max-width: 60%
+    }
+    body {
+        background-size: auto;
+    }
+    footer > img {
+        width: 150px;
+    }
+}
