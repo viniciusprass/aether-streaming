@@ -12,8 +12,9 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    background: black url("images/background.jpg") center top ;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: black;
@@ -32,12 +33,13 @@ main::after{
     z-index: -1;
 }
 #fields {
-    background-color: rgba(0, 0, 0, 0.795);
+    background-image: linear-gradient(0deg, black, rgba(0, 0, 0, 0.644));
     max-width: 400px;
+    height: 600px;
     margin: auto;
     padding: 50px 20px 80px 20px;
-    margin-top: 10%;
-    border-radius: 10px;
+    margin-top: 10vh;
+    border-radius: 10px 10px 0 0;
 }
 #loginLabel{
     color: #fff;
@@ -52,6 +54,7 @@ main::after{
     width: 80%;
     display: block;
     margin: auto;
+    margin-bottom: 20px;
     padding: 10px;
     font-size: 1em;
     background-color: #00000098;
@@ -66,7 +69,7 @@ main::after{
 }
 
 .button {
-    width: 30%;
+    width: 85%;
     display: block;
     margin: 20px auto 40px auto;
     background-color: #df1515;
@@ -74,6 +77,8 @@ main::after{
     padding: 8px;
     border-radius: 6px;
     border: none;
+    font-size: 1em;
+    font-weight: bold;
 }
 .button:hover {
     background-color: #b11111;
@@ -116,7 +121,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 10vh;
 }
 
 footer > img {
