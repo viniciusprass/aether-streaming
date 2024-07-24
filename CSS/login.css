@@ -91,9 +91,20 @@ main::after{
 #checkboxLogin {
     color: #fff;
     margin-left: 30px;
+    cursor: default;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+}
+#checkboxButton {
+    cursor: pointer;
 }
 #labelCheckBox {
     display: inline-block;
+    cursor: default;
 }
 #accButtons {
     display: flex;
@@ -102,6 +113,9 @@ main::after{
     color: #fff;
     text-decoration: none;
     margin: auto;
+}
+.accButtons:hover{
+    color: gray;
 }
 #assRedirect {
     display: flex;
