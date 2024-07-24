@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+body {
+    overflow-y: hidden;
+}
+main {
+    background-color: #3b3b3b;
+    height: 100vh;
+    width: 100%;
+    padding: 10vh 0 0 0;
+}
+#fields {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.705);
+    border-radius: 8px;
+    margin: 10vh auto;
+}
+
+.input{
+    margin-bottom: 10px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #00000098;
+    border: rgb(143, 143, 143) solid 1px;
+    border-radius: 5px;
+    caret-color: white;
+    color: white;
+}
+
+.input:focus{
+    outline: white solid 2px
+}
+
+label {
+    margin: 30px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.button {
+    width: 84%;
+    display: block;
+    margin: 20px auto 40px auto;
+    background-color: #df1515;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #b11111;
+    cursor: pointer;
+}
+.button:active{
+    background-image: radial-gradient( #df1515, #b11111);
+    transition: 1s;
+}
+
+@media (max-width: 870px) {
+    #fields {
+        max-width: 60%
+    }
+    main {
+        background-size: auto;
+    }
+    footer > img {
+        width: 150px;
+    }
+}
+@media (max-width: 500px) {
+    #fields {
+        max-width: 80%;
+        margin: 30% auto 0 auto;
+    }
+}
