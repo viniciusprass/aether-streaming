@@ -28,13 +28,12 @@ header {
 #logoHeader {
     display: flex;
     font-size: 3em;
-    color: var(--color5);
+    color: #fff;
     padding-left: 60px;
     padding-top: 20px;
 }
 #logoHeader > p {
     font-family: "kemio";
-    text-shadow: 0 0 25px var(--color4);
 }
 body {
     background-image: linear-gradient(0deg, var(--color1), var(--color2));
