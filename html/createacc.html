@@ -8,13 +8,18 @@
 </head>
 <body>
     <main>
-        <div id="fields">
-            <label for="email" id="loginLabel">Crie sua conta</label>
-            <input type="text" id="createEmailInput" class="input" placeholder="Email">
-            <input type="text" id="createPasswordInput" class="input" placeholder="Crie sua senha">
-            <input type="text" id="confirmPasswordInput" class="input" placeholder="Repita sua senha">
-            <button class="button" onclick="">Criar conta</button>
-        </div>
+        <form id="form" class="form">
+            <div id="fields">
+                <label for="email" id="loginLabel">Crie sua conta</label>
+                <input type="text" id="createEmailInput" class="input" placeholder="Email" >
+                <input type="text" id="createPasswordInput" class="input" placeholder="Crie sua senha">
+                <input type="text" id="confirmPasswordInput" class="input" placeholder="Repita sua senha">
+                <button type="submit" class="button" onclick="">Criar conta</button>
+            </div>
+        </form>
     </main>
+
+    <script src="../JS/script.js">
+    </script>
 </body>
 </html>

@@ -70,6 +70,14 @@ label {
     transition: 1s;
 }
 
+.input.error input{
+    border-color: #ff3b25;
+}
+
+.input.error a{
+    color: #ff3b25;
+}
+
 @media (max-width: 870px) {
     #fields {
         max-width: 60%
