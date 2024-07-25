@@ -97,14 +97,6 @@ main {
     transition: 1s;
 }
 
-<<<<<<< HEAD
-.input.error input{
-    border-color: #ff3b25;
-}
-
-.input.error a{
-    color: #ff3b25;
-=======
 footer {
     height: 10vh;
     display: flex;
@@ -115,7 +107,6 @@ footer {
 footer > p {
     color: rgb(165, 165, 165);
     padding: 0 30px 20px 0;
->>>>>>> 6fbb9dc7ef824dd3f99bc22720f8ddd896466e4f
 }
 
 @media (max-width: 870px) {
