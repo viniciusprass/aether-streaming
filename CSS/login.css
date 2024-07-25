@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
     font-family: "kemio";
-    src: url(../Fonts/Kemio-Normal.otf);
+    src: url(../Fonts/INGAME.ttf);
 }
 *{
     font-family: "roboto", sans-serif;
+}
+:root {
+    --color1: #03063A;
+    --color2: #091097;
+    --color3: #002BE7;
+    --color4: #99ACFF;
+    --color5: #ECEDFE;
 }
 header {
     height: 10vh;
@@ -19,17 +26,13 @@ header {
 #logoHeader {
     display: flex;
     font-size: 3em;
-    color: #fff;
+    color: var(--color5);
     padding-left: 60px;
-    padding-top: 20px;
-}
-#logoHeader > p:first-child {
-    color: rgb(255, 0, 0);
+    padding-top: 10px;
 }
 #logoHeader > p {
     font-family: "kemio";
-    text-shadow: 0 0 25px;
-    margin: 0;
+    text-shadow: 0 0 25px var(--color4);
 }
 body {
     margin: 0;
@@ -98,8 +101,8 @@ main::after{
 .button {
     width: 85%;
     display: block;
-    margin: 20px auto 40px auto;
-    background-color: #df1515;
+    margin: 45px auto 40px auto;
+    background-color: var(--color3);
     color: #fff;
     padding: 8px;
     border-radius: 6px;
@@ -108,18 +111,17 @@ main::after{
     font-weight: bold;
 }
 .button:hover {
-    background-color: #b11111;
+    background-color: var(--color2);
     cursor: pointer;
 }
 .button:active{
-    background-image: radial-gradient( #df1515, #b11111);
+    background-image: radial-gradient( var(--color2), var(--color3));
     transition: 1s;
 }
 
 #checkboxLogin {
     color: #fff;
     margin-left: 30px;
-    cursor: default;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -132,7 +134,7 @@ main::after{
 }
 #labelCheckBox {
     display: inline-block;
-    cursor: default;
+    cursor: pointer;
 }
 #accButtons {
     display: flex;
