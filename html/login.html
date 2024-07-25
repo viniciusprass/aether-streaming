@@ -15,18 +15,20 @@
     </header>
     <main>
         <div id="fields">
-            <label for="email" id="loginLabel">Entrar</label>
-            <input type="text" id="emailInput" class="input" placeholder="Email">
-            <input type="text" id="passwordInput" class="input" placeholder="Senha">
-            <div id="checkboxLogin">
-                <input id="checkboxButton" type="checkbox">
-                <p id="labelCheckBox">Mantenha-me conectado.</p>
-            </div>
-            <button class="button" onclick="">Login</button>
-            <div id="accButtons">
-                <a href="createacc.html" id="createAcc" class="accButtons">Criar conta</a>
-                <a href="" id="forgetPassword" class="accButtons">Esqueceu sua senha?</a>
-            </div>
+            <form action="" autocomplete="on">
+                <h1 id="loginLabel">Entre na sua conta</h1>
+                <input type="text" id="emailInput" class="input" placeholder="Email" required autocomplete="email">
+                <input type="text" id="passwordInput" class="input" placeholder="Senha" required minlength="8" maxlength="15" autocomplete="current-password">
+                <div id="checkboxLogin">
+                    <input id="checkboxButton" type="checkbox">
+                    <p id="labelCheckBox">Mantenha-me conectado.</p>
+                </div>
+                <div><input type="submit" class="button" value="Entrar"></div>
+                <div id="accButtons">
+                    <a href="createacc.html" id="createAcc" class="accButtons">Criar conta</a>
+                    <a href="" id="forgetPassword" class="accButtons">Esqueceu sua senha?</a>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
