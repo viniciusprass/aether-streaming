@@ -15,12 +15,18 @@
     <main>
         <div id="fields">
             <form action="" method="post">
-                <h1 id="loginLabel">Entre na sua conta</h1>
-                <input type="email" id="createEmailInput" class="input" placeholder="Email" required autocomplete="email">
-                <input type="password" id="createPasswordInput" class="input" placeholder="Crie sua senha" required minlength="8" maxlength="15" autocomplete="new-password">
-                <input type="password" id="confirmPasswordInput" class="input" placeholder="Repita sua senha" required minlength="8" maxlength="15" autocomplete="new-password">
+                <h1 id="loginLabel">Crie sua conta</h1>
+                <label for="createEmailInput" class="inputLabel">Endereço de email</label>
+                <input type="email" id="createEmailInput" class="input" required autocomplete="email">
+                <label for="createPasswordInput" class="inputLabel">Crie sua senha</label>
+                <input type="password" id="createPasswordInput" class="input" required minlength="8" maxlength="15" autocomplete="new-password">
+                <label for="confirmPasswordInput" class="inputLabel">Repita a senha</label>
+                <input type="password" id="confirmPasswordInput" class="input" required minlength="8" maxlength="15" autocomplete="new-password">
                 <div id="submitButton"><input type="submit" class="button" value="Criar"></div>
             </form>
+            <div id="accButtons">
+                <p>Já tem uma conta?</p><a href="login.html" id="loginAcc" class="accButtons">Entre aqui.</a>
+            </div>
         </div>
     </main>
 </body>
