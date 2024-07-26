@@ -10,12 +10,12 @@
     --color3: #002BE7;
     --color4: #99ACFF;
     --color5: #ECEDFE;
-
 }
 * {
     margin: 0;
     padding: 0;
     font-family: "roboto", sans-serif;
+    transition: .3s;
 }
 header {
     height: 10vh;
@@ -36,7 +36,7 @@ header {
     font-family: "kemio";
 }
 body {
-    background-image: linear-gradient(0deg, var(--color1), var(--color2));
+    background-image: linear-gradient(0deg, rgb(0, 0, 39), rgb(0, 0, 85));
 }
 main {
     height: 100vh;
@@ -47,44 +47,43 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    padding: 40px 0 70px 0;
-    background: #fff;
-    border: 1px solid #d8d8d8;
+    padding: 40px 0 130px 0;
+    background: rgba(255, 255, 255, 0.13);
     border-radius: 8px;
     margin: 20vh auto;
 }
 
 .input{
-    margin-bottom: 10px;
     width: 80%;
     display: block;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 3px auto 20px auto;
     padding: 10px;
     font-size: 1em;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border: rgb(182, 182, 182) solid 1px;
     border-radius: 5px;
-    caret-color: rgb(48, 48, 48);
-    color: rgb(66, 66, 66);
-}
-
-.input:focus{
-    outline: rgb(187, 187, 187) solid 1px
+    caret-color: rgb(228, 228, 228);
+    color: rgb(230, 230, 230);
 }
 
 #loginLabel {
     margin: 0 0 30px 30px;
     font-size: 2em;
     font-weight: bold;
+    color: #fff;
+}
+.inputLabel {
+    color: white;
+    margin-left: 30px;
+    font-weight: 500;
 }
 
 .button {
     width: 85%;
     display: block;
-    margin: 20px auto 40px auto;
-    background-color: var(--color3);
-    color: #fff;
+    margin: 20px auto 0 auto;
+    background-color: #fff;
+    color: var(--color1);
     padding: 8px;
     border-radius: 6px;
     border: none;
@@ -92,12 +91,8 @@ main {
     font-weight: bold;
 }
 .button:hover {
-    background-color: var(--color2);
+    background-color: #e6e6e6;
     cursor: pointer;
-}
-.button:active{
-    background-image: radial-gradient( var(--color2), var(--color3));
-    transition: 1s;
 }
 #submitButton{
     margin-top: 40px;
