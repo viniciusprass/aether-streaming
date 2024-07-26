@@ -150,7 +150,6 @@ footer > img {
 }
 @media (max-width: 870px) {
     #fields {
-        max-width: 60%;
         margin: 5vh auto;
     }
     main {
