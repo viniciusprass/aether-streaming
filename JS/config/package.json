@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Neste projeto vamos desenvolver um streaming de filmes e séries, onde o usuário será capaz de criar uma nova conta em nosso site, entrar em sua conta e após entrar, o mesmo será capaz de assistir a diversos filmes e séries que estaram disponíveis em nosso catálogo.",
   "main": "db.js",
+  "exports": "modules",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "DevStart": "nodemon server.js"
   },
   "author": "",
