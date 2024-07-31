@@ -1,4 +1,4 @@
-var menuButton = document.querySelector('#menuButton')
+var menuButton = document.querySelector('#menu-button')
 var overlay = document.querySelector('#overlay')
 
 overlay.addEventListener('click', function(){
@@ -17,7 +17,7 @@ menuButton.addEventListener('click', function(){
 })
 
 //Animação da logo
-var logo = document.querySelector('#logoHeader');
+var logo = document.querySelector('#logo-header');
 var words = ["Ngg", "NggFLix", "moovie","BrasFlix","ClipCloud", "Undefined"];
 var currentWordIndex = 0;
 

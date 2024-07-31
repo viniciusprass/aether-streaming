@@ -23,16 +23,17 @@ header {
     position: fixed;
     align-items: center;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background: rgba(0, 0, 0, 0.436);
     padding: 0 0 0 10px;
     z-index: 10;
 }
-#menuButton {
+#menu-button {
     color: #fff;
     font-size: 2em;
+    cursor: pointer;
 }
-#logoHeader {
+#logo-header {
     display: flex;
     font-size: 1.8em;
     color: #fff;
@@ -61,15 +62,18 @@ header {
 body {
     background-image: linear-gradient(0deg, rgb(0, 0, 39), rgb(0, 0, 85));
 }
+main::-webkit-scrollbar {
+    display: none;
+}
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Cor preta com 50% de opacidade */
-    display: none; /* Esconde o overlay inicialmente */
-    z-index: 1; /* Para ficar abaixo do menu mas acima do conteúdo */
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
 }
 
 .menu-container {
@@ -100,8 +104,8 @@ body {
     display: block;
 }
 
-.menu-container a:hover {
-    background-color: #575757;
+.menu-container li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #menu-toggle {
@@ -117,6 +121,30 @@ body {
 
 main { 
     height: 100vh;
-    width: 100%;
     /* Alterar depois */
+}
+
+#carousel {
+    height: 155px;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    margin-top: 8vh; /* mudar depois */
+    padding: 2.5%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+.carouselItem:not(:last-child) {
+    margin-right: 2.5%;
+}
+.carouselItem {
+    background: rgba(0, 0, 0, 0.281);
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 29%;
+    height: 150px;
 }
