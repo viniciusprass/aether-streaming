@@ -1,6 +1,14 @@
 var menuButton = document.querySelector('#menu-button')
 var overlay = document.querySelector('#overlay')
 
+document.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 0) {
+        header.style.background = 'rgba(0, 0, 0, 0.95)'
+    } else {
+        header.style.background = 'none'
+    }
+});
 overlay.addEventListener('click', function(){
     menu.style.left = '-250px';
     overlay.style.display = 'none'
@@ -13,6 +21,7 @@ menuButton.addEventListener('click', function(){
     } else {
         menu.style.left = '0px';
         overlay.style.display = 'block'
+
     }
 })
 
@@ -27,10 +36,10 @@ function animateText() {
 
     logo.textContent = text;
     if (currentWord === "Undefined"){
-        logo.style.color = '#03063A'
+        logo.style.color = '#fff'
         logo.style.textShadow = '0 0 15px #fff'
     } else {
-        logo.style.color = '#fff'
+        logo.style.color = 'rgba(255, 255, 255, .95)'
         logo.style.textShadow = 'none'
         logo.style.transition = '0s'
     }
@@ -43,6 +52,7 @@ function animateText() {
     } else {
         setTimeout(animateText, 80);
     }
+
 }
 
 function eraseText() {
