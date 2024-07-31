@@ -77,8 +77,12 @@ main {
     border-radius: 5px;
     caret-color: rgb(228, 228, 228);
     color: rgb(230, 230, 230);
+    transition: 0s;
 }
-
+.input:focus {
+    outline: none;
+    border: 1px solid white;
+}
 .button {
     width: 85%;
     display: block;

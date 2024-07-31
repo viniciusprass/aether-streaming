@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "kemio";
+    src: url(../Fonts/INGAME.ttf);
+}
+*{
+    font-family: "roboto", sans-serif;
+    transition: .3s;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color1: #03063A;
+    --color2: #091097;
+    --color3: #002BE7;
+    --color4: #99ACFF;
+    --color5: #ECEDFE;
+    --fontColor: #4f8bff;
+}
+header {
+    height: 8vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.436);
+    padding: 0 0 0 10px;
+    z-index: 10;
+}
+#menuButton {
+    color: #fff;
+    font-size: 2em;
+}
+#logoHeader {
+    display: flex;
+    font-size: 1.8em;
+    color: #fff;
+    padding: 6px 0 0 15px;
+    font-family: "kemio";
+    z-index: 3;
+}
+.input{
+    position: absolute;
+    padding: 5px;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.20);
+    border: rgb(182, 182, 182) solid 1px;
+    border-radius: 2px;
+    caret-color: rgb(228, 228, 228);
+    color: rgb(230, 230, 230);
+    transition: 0s;
+    right: 25px;
+    max-width: 130px;
+}
+.input:focus {
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+body {
+    background-image: linear-gradient(0deg, rgb(0, 0, 39), rgb(0, 0, 85));
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Cor preta com 50% de opacidade */
+    display: none; /* Esconde o overlay inicialmente */
+    z-index: 1; /* Para ficar abaixo do menu mas acima do conteúdo */
+}
+
+.menu-container {
+    position: fixed;
+    top: 8vh;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.436);
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-container li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.menu-container a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-container a:hover {
+    background-color: #575757;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+main { 
+    height: 100vh;
+    width: 100%;
+    /* Alterar depois */
+}
