@@ -36,8 +36,8 @@ function animateText() {
 
     logo.textContent = text;
     if (currentWord === "Undefined"){
-        logo.style.color = '#fff'
-        logo.style.textShadow = '0 0 15px #fff'
+        logo.style.color = '#03063A'
+        logo.style.textShadow = '0 0 20px #fff'
     } else {
         logo.style.color = 'rgba(255, 255, 255, .95)'
         logo.style.textShadow = 'none'

@@ -16,6 +16,13 @@
     --color4: #99ACFF;
     --color5: #ECEDFE;
     --fontColor: #4f8bff;
+    --overlayBackground: rgba(255, 255, 255, 0.459);
+}
+body {
+    background-image: linear-gradient(180deg, rgb(0, 0, 39) 30%, rgb(0, 0, 1) 50%)
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 header {
     height: 8vh;
@@ -37,7 +44,7 @@ header {
     display: flex;
     font-size: 1.8em;
     color: #fff;
-    padding: 6px 0 0 15px;
+    padding: 6px 0 0 8px;
     font-family: "kemio";
     z-index: 3;
 }
@@ -59,12 +66,6 @@ header {
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.16);
 }
-body {
-    background-image: linear-gradient(0deg, rgb(0, 0, 39), rgb(0, 0, 85));
-}
-html::-webkit-scrollbar {
-    display: none;
-}
 #overlay {
     position: fixed;
     top: 0;
@@ -75,7 +76,6 @@ html::-webkit-scrollbar {
     display: none;
     z-index: 1;
 }
-
 .menu-container {
     position: fixed;
     top: 8vh;
@@ -122,10 +122,6 @@ html::-webkit-scrollbar {
     color: #333;
 }
 
-main { 
-    height: 100vh;
-    /* Alterar depois */
-}
 #gambiarra {
     height: 8vh; /* mudar depois */
 }
@@ -135,26 +131,34 @@ main {
     height: 400px;
     background-color: gray;
 }
-#carousel {
+.carouselTitle {
+    font-size: 1.4em;
+    padding-left: 2.5%;
+    color: #fff;
+}
+.carousel {
     height: 155px;
-    background-color: #fff;
     align-items: center;
     display: flex;
-    padding: 2.5%;
+    padding: 0 2.5% 2.5% 2.5%;
     overflow: scroll;
     white-space: nowrap;
 }
-#carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
     display: none;
 }
 .carouselItem:not(:last-child) {
     margin-right: 2.5%;
 }
 .carouselItem {
-    background: rgba(0, 0, 0, 0.281);
+    background-color: #fff;
     flex-shrink: 0;
     flex-wrap: nowrap;
     list-style: none;
     width: 29%;
     height: 150px;
+    border-radius: 3%;
+}
+.carouselTitle:first-child {
+    padding-top: 2.5%;
 }
