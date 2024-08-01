@@ -1,29 +1,13 @@
-var menuButton = document.querySelector('#menu-button')
 var overlay = document.querySelector('#overlay')
 
 document.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     if (window.scrollY > 0) {
-        header.style.background = 'rgba(0, 0, 0, 0.95)'
+        header.style.background = ' #03063A'
     } else {
         header.style.background = 'none'
     }
 });
-overlay.addEventListener('click', function(){
-    menu.style.left = '-250px';
-    overlay.style.display = 'none'
-})
-menuButton.addEventListener('click', function(){
-    var menu = document.querySelector('#menu')
-    if (menu.style.left === '0px') {
-        menu.style.left = '-250px';
-        overlay.style.display = 'none'
-    } else {
-        menu.style.left = '0px';
-        overlay.style.display = 'block'
-
-    }
-})
 
 //Animação da logo
 var logo = document.querySelector('#logo-header');
@@ -36,10 +20,10 @@ function animateText() {
 
     logo.textContent = text;
     if (currentWord === "Undefined"){
-        logo.style.color = '#03063A'
-        logo.style.textShadow = '0 0 20px #fff'
+        logo.style.color = '#fff'
+        logo.style.textShadow = '0 0 30px #fff'
     } else {
-        logo.style.color = 'rgba(255, 255, 255, .95)'
+        logo.style.color = 'rgba(255, 255, 255, .4)'
         logo.style.textShadow = 'none'
         logo.style.transition = '0s'
     }
