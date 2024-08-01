@@ -18,6 +18,7 @@
     --color5: #D7B0FD;
     --fontColor: #4f8bff;
     --overlayBackground: rgba(255, 255, 255, 0.459);
+    --marginAuto: 20%
 }
 /* body {
     background-image: url('../images/background.jpg');
@@ -124,19 +125,17 @@ header {
     border: none;
     color: #333;
 }
-
 #banner {
-    width: 100%;
-    height: 100px;
-
-}
-.video-background {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    object-fit: contain;
+    height: 250px;
+    position: absolute;
     z-index: -1;
+    overflow: hidden;
+    background-image: url('../images/JS.jpg');
+    background-size: cover;
+    background-position: right bottom;
 }
 .carouselTitle {
     font-size: 1.4em;
@@ -169,8 +168,8 @@ header {
     border-radius: 3%;
 }
 .carouselTitle:first-child {
-    padding-top: 20%;
     background: none;
+    margin-top: 200px;
 }
 #firstCarousel {
     background: none;

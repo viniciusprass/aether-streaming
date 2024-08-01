@@ -2,7 +2,7 @@ var overlay = document.querySelector('#overlay')
 
 window.addEventListener('load', function() {
     var video = document.querySelector('#background-video');
-    video.play();
+
     video.muted = true;
     video.loop = true;
 });
