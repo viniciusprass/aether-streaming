@@ -47,7 +47,7 @@ header {
 #logo-header {
     display: flex;
     font-size: 1.8em;
-    color: #fff;
+    color: #000;
     padding: 6px 0 0 8px;
     font-family: "kemio";
     z-index: 3;
