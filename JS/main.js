@@ -5,8 +5,6 @@ window.addEventListener('load', function() {
     video.play();
     video.muted = true;
     video.loop = true;
-    video.autoplay = true;
-    video.play();
 });
 document.addEventListener("scroll", function() {
     var header = document.querySelector("header");
