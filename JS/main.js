@@ -1,5 +1,13 @@
 var overlay = document.querySelector('#overlay')
 
+window.addEventListener('load', function() {
+    var video = document.querySelector('#background-video');
+    video.play();
+    video.muted = true;
+    video.loop = true;
+    video.autoplay = true;
+    video.play();
+});
 document.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     if (window.scrollY > 0) {
@@ -8,6 +16,7 @@ document.addEventListener("scroll", function() {
         header.style.background = 'none'
     }
 });
+
 
 //Animação da logo
 var logo = document.querySelector('#logo-header');
