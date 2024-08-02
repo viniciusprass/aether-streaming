@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aether</title>
+    <title>Trail</title>
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
 </head>
 <body>
     <header>
-        <title id="logo-header">Undefined</title>
+        <title id="logo-header">Trail</title>
         <input type="text" class="input" placeholder="Buscar">
+        <span class="material-symbols-outlined" id="searchIcon">search</span>
     </header>
     <div id="overlay"></div>
     <main>
-        <div id="banner"></div>
+        <div id="banner">
+            <div class="slider">
+                <img src="../images/1.jpg" alt="" id="img1" class="slide">
+                <img src="../images/2.jpg" alt="" id="img2" class="slide">
+                <img src="../images/3.jpg" alt="" id="img3" class="slide">
+            </div>
+        </div>
         <div>
             <h2 class="carouselTitle">Teste</h2>
             <ul class="carousel" id="firstCarousel">
-                <li class="carouselItem"></li>
-                <li class="carouselItem"></li>
+                <li class="carouselItem" id="JS-course" onclick="redirect('login')"></li>
+                <li class="carouselItem" id="Python-course"></li>
                 <li class="carouselItem"></li>
                 <li class="carouselItem"></li>
             </ul>
@@ -46,7 +53,12 @@
             </ul>
         </div>
     </main>
-    <footer></footer>
+    <div id="divisor"></div>
+    <footer>
+        <div id="igButton" class="social"></div>
+        <div id="siteButton" class="social"></div>
+        <div id="github" class="social"></div>
+    </footer>
     <script src="../JS/main.js"></script>
 </body>
 </html>

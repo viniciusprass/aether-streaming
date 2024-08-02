@@ -20,24 +20,24 @@
     --overlayBackground: rgba(255, 255, 255, 0.459);
     --marginAuto: 20%
 }
-/* body {
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 html::-webkit-scrollbar {
     display: none;
 }
+body {
+    background: #f1f1f1;
+}
 header {
-    height: 8vh;
+    height: 6vh;
     display: flex;
     position: fixed;
     align-items: center;
+    justify-content: space-between;
     top: 0;
-    width: 100vw;
-    padding: 0 0 0 10px;
+    width: 100%;
     z-index: 10;
     background: none;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #menu-button {
     color: #fff;
@@ -48,28 +48,33 @@ header {
     display: flex;
     font-size: 1.8em;
     color: #000;
-    padding: 6px 0 0 8px;
     font-family: "kemio";
     z-index: 3;
+    padding: 5px 0 0 15px;
+}
+#searchIcon {
+    padding-right: 15px;
+    font-size: 1.8em;
 }
 .input{
-    position: absolute;
+    display: none;
+    /* position: absolute;
     padding: 5px;
     font-size: 1em;
-    background-color: rgba(0, 0, 0, 0.20);
-    border: rgb(182, 182, 182) solid 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: rgb(211, 211, 211) solid 1px;
     border-radius: 2px;
-    caret-color: rgb(228, 228, 228);
-    color: rgb(230, 230, 230);
+    caret-color: #000;
+    color: #3b3b3b;
     transition: 0s;
     right: 25px;
-    max-width: 130px;
+    max-width: 130px; */
 }
-.input:focus {
+/* .input:focus {
     outline: none;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.16);
-}
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.349);
+} */
 #overlay {
     position: fixed;
     top: 0;
@@ -91,10 +96,6 @@ header {
     transition: 0.3s;
     z-index: 2;
 }
-.menu-container.open {
-    left: 0;
-}
-
 .menu-container ul {
     list-style-type: none;
     padding: 0;
@@ -126,22 +127,42 @@ header {
     color: #333;
 }
 #banner {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 20% 10% 10% 10%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #00000047;
+}
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.slide {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 250px;
+    object-fit: cover;
     position: absolute;
-    z-index: -1;
-    overflow: hidden;
-    background-image: url('../images/JS.jpg');
-    background-size: cover;
-    background-position: right bottom;
+    transition: transform 1s ease-in-out;
 }
+
+#img2 {
+    transform: translateX(100%);
+}
+#img3 {
+    transform: translateX(-100%);
+}
+
 .carouselTitle {
     font-size: 1.4em;
     padding-left: 2.5%;
-    color: #fff;
-    background-color: var(--color0);
+    color: #383838;
 }
 .carousel {
     height: 155px;
@@ -150,7 +171,6 @@ header {
     padding: 0 2.5% 2.5% 2.5%;
     overflow: scroll;
     white-space: nowrap;
-    background-color: var(--color0);
 }
 .carousel::-webkit-scrollbar {
     display: none;
@@ -166,12 +186,43 @@ header {
     width: 29%;
     height: 150px;
     border-radius: 3%;
+    box-shadow: 2px 2px 2px #0000004f;
 }
-.carouselTitle:first-child {
-    background: none;
-    margin-top: 200px;
+#divisor {
+    height: .1vh;
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
 }
-#firstCarousel {
-    background: none;
-    background-image: linear-gradient(0deg, var(--color0) 90%, rgba(0, 0, 0, 0));
+footer {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social:not(:last-child){
+    margin-right: 20px;
+}
+.social {
+    height: 30px;
+    width: 30px;
+}
+#igButton {
+    background: url('../images/instagram.png');
+    background-position: center center;
+    background-size: cover;
+    padding: 3px;
+}
+#siteButton {
+    background: url('../images/Velkron.png');
+    background-position: center center;
+    background-size: cover;
+    padding: 3px;
+}
+#github {
+    background: url('../images/GitHub.png');
+    background-position: center center;
+    background-size: cover;
+    padding: 3px;
 }

@@ -1,11 +1,49 @@
-document.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    if (window.scrollY > 0) {
-        header.style.background = ' #03063A'
+const slider = document.querySelector('.slider');
+const img1 = document.querySelector('#img1')
+const img2 = document.querySelector('#img2')
+const img3 = document.querySelector('#img3')
+const totalImages = slider.children.length;
+let currentIndex = 0;
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+
+    if (currentIndex == 1) {
+        img3.style.opacity = '0';
+        img3.style.transform = 'translateX(100%)';
+        img1.style.transform = 'translateX(-100%)';
+        img2.style.transform = 'translateX(0%)';
+        img2.style.opacity = '1'
+    } else if (currentIndex == 2) {
+        img1.style.opacity = '0';
+        img1.style.transform = 'translateX(100%)';
+        img2.style.transform = 'translateX(-100%)';
+        img3.style.transform = 'translateX(0%)';
+        img3.style.opacity = '1';
     } else {
-        header.style.background = 'none'
+        img2.style.opacity = '0';
+        img2.style.transform = 'translateX(100%)';
+        img3.style.transform = 'translateX(-100%)';
+        img1.style.transform = 'translateX(0%)';
+        img1.style.opacity = '1';
     }
-});
+}
+
+setInterval(showNextImage, 10000);
+
+
+function redirect(page) {
+    window.location.href = `../html/${page}.html`
+}
+
+// document.addEventListener("scroll", function() {
+//     var header = document.querySelector("header");
+//     if (window.scrollY > 0) {
+//         header.style.background = ' #03063A'
+//     } else {
+//         header.style.background = 'none'
+//     }
+// });
 
 
 //Animação da logo
